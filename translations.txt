@@ -1,0 +1,17 @@
+Entrada: O Matheus sai para passear todos os domingos.
+Tradução: Matheus goes for a walk every Sunday.
+Entrada: Os corruptos estão submergios em um lago de espesso piche fervente; os que tentam ficar com a cabeça acima do caldo são torturados por demônios, que os dilaceram. Em vida, os corruptos tiraram proveito da confiança que a sociedade depositava neles.
+Tradução: The corrupt are submerged in a lake of thick boiling pitch; those who try to keep their heads above the broth are tortured by demons, who tear them apart. In life, the corrupt took advantage of the trust society placed in them.
+
+Entrada: Eu não tenho inimigos.
+Tradução: I have no enemies.
+
+Entrada: Eu gosto do Pedro
+Tradução: I like Pedro.
+
+Entrada: Eu estou feliz.
+Tradução: I am happy
+
+Entrada: Hoje é aniversário da Cristiane
+Tradução: Today is Christiane's birthday
+
