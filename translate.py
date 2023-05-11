@@ -1,6 +1,6 @@
-import nlpcloud
-
-client = nlpcloud.Client("nllb-200-3-3b", "3c1bbe039a3df4fc8ebc3025dfd5aabd63767091")
+from connection_nlpcloud import *
+from connection_mongo import *
+from create_user import *
 
 def receive_text_input():
     text = input("Informe um texto: ")
@@ -15,19 +15,11 @@ def client_output(input_text):
     for value in response.values():
         return str(value)
 
+create_user(username_input, password_input)
+
 receive_text = receive_text_input()
 response_text = client_output(receive_text)
 
-def save_receive_text(input_text):
-    file = open("translations.txt", "a")
-    file.write("Entrada: " + input_text + "\n")
-    file.close()
-
-def save_response_text(output_text):
-    if output_text:
-        file = open("translations.txt", "a")
-        file.write("Tradução: " + output_text + "\n\n")
-        file.close()
-
-save_receive_text(receive_text)
-save_response_text(response_text)
+translation_archives = clientMongo["translation_archives"]
+collection_logs = translation_archives["logs"]
+collection_logs.insert_many([{"input" : receive_text, "output" : response_text}])

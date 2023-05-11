@@ -1,17 +1,22 @@
 Entrada: O Matheus sai para passear todos os domingos.
-Tradução: Matheus goes for a walk every Sunday.
-Entrada: Os corruptos estão submergios em um lago de espesso piche fervente; os que tentam ficar com a cabeça acima do caldo são torturados por demônios, que os dilaceram. Em vida, os corruptos tiraram proveito da confiança que a sociedade depositava neles.
-Tradução: The corrupt are submerged in a lake of thick boiling pitch; those who try to keep their heads above the broth are tortured by demons, who tear them apart. In life, the corrupt took advantage of the trust society placed in them.
+Traduï¿½ï¿½o: Matheus goes for a walk every Sunday.
+Entrada: Os corruptos estï¿½o submergios em um lago de espesso piche fervente; os que tentam ficar com a cabeï¿½a acima do caldo sï¿½o torturados por demï¿½nios, que os dilaceram. Em vida, os corruptos tiraram proveito da confianï¿½a que a sociedade depositava neles.
+Traduï¿½ï¿½o: The corrupt are submerged in a lake of thick boiling pitch; those who try to keep their heads above the broth are tortured by demons, who tear them apart. In life, the corrupt took advantage of the trust society placed in them.
 
-Entrada: Eu não tenho inimigos.
-Tradução: I have no enemies.
+Entrada: Eu nï¿½o tenho inimigos.
+Traduï¿½ï¿½o: I have no enemies.
 
 Entrada: Eu gosto do Pedro
-Tradução: I like Pedro.
+Traduï¿½ï¿½o: I like Pedro.
 
 Entrada: Eu estou feliz.
-Tradução: I am happy
+Traduï¿½ï¿½o: I am happy
 
-Entrada: Hoje é aniversário da Cristiane
-Tradução: Today is Christiane's birthday
+Entrada: Hoje ï¿½ aniversï¿½rio da Cristiane
+Traduï¿½ï¿½o: Today is Christiane's birthday
 
+Entrada: Eu sou bonito
+Traduï¿½ï¿½o: I'm handsome
+
+Entrada: Conexï¿½o realizada.
+Traduï¿½ï¿½o: Connection made.
