@@ -6,7 +6,6 @@ def ask_user():
     if username in collection_users:
         return username
 
-# Continuar checagem de senha
 # def ask_password():
 #     password = (input("Informe sua senha: "))
-#     if password in collection_users
+#     if password in collection_users:
