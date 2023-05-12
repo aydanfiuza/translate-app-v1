@@ -27,7 +27,9 @@ current_time = time_now.strftime("%H:%M:%S")
 
 translation_archives = clientMongo["translation_archives"]
 collection_logs = translation_archives["logs"]
+log_id = collection_logs.count_documents({}) + 1
 
-collection_logs.insert_many([{"input" : receive_text, 
+collection_logs.insert_many([{"_id" : log_id,
+                              "input" : receive_text, 
                               "output" : response_text, 
                               "date-time" : {"date" : current_day, "time" : current_time}}])
