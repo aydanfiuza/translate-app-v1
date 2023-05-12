@@ -1,6 +1,7 @@
 from connection_nlpcloud import *
 from connection_mongo import *
 from create_user import *
+from datetime import *
 
 def receive_text_input():
     text = input("Informe um texto: ")
@@ -20,6 +21,13 @@ create_user(username_input, password_input)
 receive_text = receive_text_input()
 response_text = client_output(receive_text)
 
+current_day = str(date.today())
+time_now = datetime.now()
+current_time = time_now.strftime("%H:%M:%S")
+
 translation_archives = clientMongo["translation_archives"]
 collection_logs = translation_archives["logs"]
-collection_logs.insert_many([{"input" : receive_text, "output" : response_text}])
+
+collection_logs.insert_many([{"input" : receive_text, 
+                              "output" : response_text, 
+                              "date-time" : {"date" : current_day, "time" : current_time}}])
