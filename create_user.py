@@ -5,18 +5,18 @@ def create_username():
     return username
 
 def create_password():
-    password = input("Crie sua senha: ")
-    if len(password) < 8:
-        print("A senha deve ter mais de 8 caracteres.")
-        quit()
-    else:
-        return password
+    while True:
+        password = input("Crie sua senha: ")
+        if len(password) < 8:
+            print("A senha deve ter no mínimo 8 caracteres.")
+        else:
+            return password
 
-username_input = create_username()
-password_input = create_password()
-user = clientMongo["user"]
-collection_users = user["users"]
+collection_users = clientMongo["user"]["users"]
 
 def create_user(username, password):
-    if collection_users.insert_many([{"user" : username, "password" : password}]):
+    user_data = {"username": username, "password": password}
+    if collection_users.insert_one(user_data):
         print("Usuário cadastrado com sucesso.")
+
+create_user(create_username(), create_password())
