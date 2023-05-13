@@ -18,5 +18,3 @@ def create_user(username, password):
     user_data = {"username": username, "password": password}
     if collection_users.insert_one(user_data):
         print("Usuário cadastrado com sucesso.")
-
-create_user(create_username(), create_password())
