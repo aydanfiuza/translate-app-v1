@@ -1,3 +1,7 @@
 import nlpcloud
+import json
 
-client = nlpcloud.Client("nllb-200-3-3b", "3c1bbe039a3df4fc8ebc3025dfd5aabd63767091")
+with open('apiConnection.json') as file:
+    data = json.load(file)
+
+client = nlpcloud.Client("nllb-200-3-3b", data["key"])
