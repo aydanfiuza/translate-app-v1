@@ -1,6 +1,10 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
+import json
 
-uri = "mongodb+srv://aydanfiuza:shggwu2009@translate-app.6ffsthk.mongodb.net/?retryWrites=true&w=majority"
+with open('apiConnection.json') as file:
+    data = json.load(file)
+
+uri = data["uri"]
 
 clientMongo = MongoClient(uri, server_api=ServerApi('1'))
