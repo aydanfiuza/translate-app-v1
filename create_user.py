@@ -15,6 +15,6 @@ def create_password():
 collection_users = clientMongo["user"]["users"]
 
 def create_user(username, password):
-    user_data = {"username": username, "password": password}
+    user_data = {"user": username, "password": password}
     if collection_users.insert_one(user_data):
         print("Usuário cadastrado com sucesso.")
