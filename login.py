@@ -4,7 +4,6 @@ from create_user import *
 def check_user():
     username = input("Informe seu nome de usuário: ")
     user_document = collection_users.find_one({"user" : username})
-    print(user_document)
     if user_document is not None:
         return username
     else:
