@@ -1,6 +1,7 @@
 from connection_mongo import *
 from create_user import *
 
+
 def check_user():
     username = input("Informe seu nome de usuário: ")
     user_document = collection_users.find_one({"user" : username})
@@ -19,6 +20,7 @@ def check_user():
             else:
                 print("Opção inválida. Por favor, informe S para sim ou N para não.")
 
+
 def check_password(username):
     while True:
         password = input("Informe sua senha: ")
@@ -27,8 +29,4 @@ def check_password(username):
             print("Login realizado com sucesso.")
             return True
         else:
-            print("Senha incorreta.")
-
-
-
-        
+            print("Senha incorreta.")    

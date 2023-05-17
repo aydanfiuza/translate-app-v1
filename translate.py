@@ -8,6 +8,7 @@ def receive_text_input():
         else: 
             return text
 
+
 def client_output(input_text):
     response = client.translation(input_text, source='por_Latn', target='eng_Latn')
     for value in response.values():

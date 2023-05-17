@@ -14,6 +14,7 @@ input = Entry(window, width=40)
 input.focus_set()
 input.pack()
 
+
 def entry_input():
     input_text = input.get()
     response = client.translation(input_text, source='por_Latn', target='eng_Latn')
@@ -21,6 +22,7 @@ def entry_input():
         string = str(value)
     new_label = Label(window, text=string)
     new_label.pack()
+
 
 button = Button(window, text="Enviar", command=entry_input)
 button.pack()

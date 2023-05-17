@@ -1,8 +1,10 @@
 from connection_mongo import *
 
+
 def create_username():
     username = input("Crie seu nome de usuário: ")
     return username
+
 
 def create_password():
     while True:
@@ -12,7 +14,9 @@ def create_password():
         else:
             return password
 
+
 collection_users = clientMongo["user"]["users"]
+
 
 def create_user(username, password):
     user_data = {"user": username, "password": password}
